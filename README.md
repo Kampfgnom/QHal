@@ -36,7 +36,7 @@ Include header, parse JSON, parse HAL:
 QByteArray data = "... some JSON data ...";
 
 QJsonDocument document = QJsonDocument::fromJson(data);
-QHalResource collectionDocument = QHalResource::fromVariant(document.toVariant().toMap());
+QHalResource collectionDocument = QHalResource::fromVariant(document.toVariant());
 ````
 
 **Important**: Note that QHalResource and QHalLink are both either resources (or links) or **lists** of resources (or links).
