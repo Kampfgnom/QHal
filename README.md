@@ -12,8 +12,8 @@ QHal comes with some helpers to include it in you project.
 You can simply add the whole project to your qmake based project and add the following lines to your application's project file:
 
 ````
-QHAL_PATH = relative/or/absolute/path/to/QCollectionJson
-include($$QHAL_PATH/QCollectionJson.pri)
+QHAL_PATH = relative/or/absolute/path/to/QHal
+include($$QHAL_PATH/QHal.pri)
 LIBS            += $$QHAL_LIBS
 INCLUDEPATH     += $$QHAL_INCLUDEPATH
 `````
@@ -90,6 +90,14 @@ The project can be build in Qt Creator or by issuing the following commands.
 qmake
 make
 ````
+
+Contributing
+============
+Since this library is currently not in use, it is not well tested.
+
+If you find errors, simply file an issue in GitHub, or even better:
+
+If you want to contribute to QHal, you can do the usual Fork-Patch-FilePullRequest dance. I might even tranfser the project in someone else's hands!
 
 License
 =======
